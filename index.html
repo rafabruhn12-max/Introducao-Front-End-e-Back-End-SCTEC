@@ -77,11 +77,44 @@
 
             <p>Tem um projeto em mente? Entre em contato.</p>
 
-            <address>
-                E-mail:<a href="mailto:Rafabruhn12@gmail.com">Rafabruhn12@gmail.com</a> <br>
+            <form action="">
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome" name="nome" required> <br>
 
-                Telefone: <a href="tel:+55599999">Telefone:559999999</a>
-            </address>
+                 <label for="email">E-mail: </label>
+                <input type="text" id="email" name="email" required> <br>
+
+                <label for="telefone">Telefone: </label>
+                <input type="tel" id="telefone" name="telefone"> <br>
+
+                <label for="date">Data: </label>
+                <input type="date" id="date" name="date"> <br>
+
+                <label for="file">color: </label>
+                <input type="file" id="file" name="file"> <br> <!--caixa de enviar arquivo-->
+                
+
+                <label for="assunto">Assunto</label>
+                <select name="assunto" id="assunto">
+                    <option value="orcamento">Orçamento</option>
+                    <option value="duvida">Dúvida</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+                <br>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="5"></textarea>
+
+                <br>
+
+                <input type="checkbox" id="inscricao" name="inscricao">
+                <label for="inscricao">Deseja receber minha newsletter? Fique por dentro.</label>
+
+                <br>
+
+                <input type="submit" value="Enviar mensagem">
+            </form>
 
         </section>
 
